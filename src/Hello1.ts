@@ -1,11 +1,11 @@
-import { ECS } from '@etherealengine/ecs'
-import { PhysicsSystem } from '@etherealengine/spatial/src/physics/PhysicsModule'
-import { NameComponent } from '@etherealengine/spatial/src/common/NameComponent'
-import { VisibleComponent } from '@etherealengine/spatial/src/renderer/components/VisibleComponent'
-import { TransformComponent } from '@etherealengine/spatial/src/transform/components/TransformComponent'
-import { PrimitiveGeometryComponent } from '@etherealengine/engine/src/scene/components/PrimitiveGeometryComponent'
+import { ECS } from '@ir-engine/ecs'
+import { PhysicsSystem } from '@ir-engine/spatial/src/physics/PhysicsModule'
+import { NameComponent } from '@ir-engine/spatial/src/common/NameComponent'
+import { VisibleComponent } from '@ir-engine/spatial/src/renderer/components/VisibleComponent'
+import { TransformComponent } from '@ir-engine/spatial/src/transform/components/TransformComponent'
+import { PrimitiveGeometryComponent } from '@ir-engine/engine/src/scene/components/PrimitiveGeometryComponent'
 import { Vector3 } from 'three'
-import { GeometryTypeEnum } from '@etherealengine/engine/src/scene/constants/GeometryTypeEnum'
+import { GeometryTypeEnum } from '@ir-engine/engine/src/scene/constants/GeometryTypeEnum'
 
 
 let initialized = false    // Track whether our code was already run or not
