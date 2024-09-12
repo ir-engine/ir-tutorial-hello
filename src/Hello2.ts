@@ -1,4 +1,4 @@
-import { ECS } from '@ir-engine/ecs'
+import { ECS, S } from '@ir-engine/ecs'
 import { PrimitiveGeometryComponent } from '@ir-engine/engine/src/scene/components/PrimitiveGeometryComponent'
 import { GeometryTypeEnum } from '@ir-engine/engine/src/scene/constants/GeometryTypeEnum'
 import { PhysicsSystem } from '@ir-engine/spatial'
@@ -11,10 +11,7 @@ import { Vector3 } from 'three'
 const HelloComponent = ECS.defineComponent({
   name: 'ee.hello-tutorial.HelloComponent',
   jsonID: 'EE_tutorial_hello',
-
-  onInit() {
-    return { initialized: false }
-  }
+  schema: S.Object({ initialized: S.Bool(false) })
 })
 
 // Define our query
