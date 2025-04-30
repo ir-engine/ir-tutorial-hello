@@ -11,7 +11,7 @@ import { Vector3 } from 'three'
 const HelloComponent = ECS.defineComponent({
   name: 'ee.hello-tutorial.HelloComponent',
   jsonID: 'EE_tutorial_hello',
-  schema: S.Object({ initialized: S.Bool(false) })
+  schema: S.Object({ initialized: S.Bool() })
 })
 
 // Define our query
